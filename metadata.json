@@ -1,0 +1,6 @@
+{
+  "name": "Sharia Stocks",
+  "description": "Stock analysis screener implementing AAOIFI Shariah Standard No. 21 calculations to classify stocks as Halal or Haram based on quantitative financial ratios and sector screens with live Yahoo Finance data.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
