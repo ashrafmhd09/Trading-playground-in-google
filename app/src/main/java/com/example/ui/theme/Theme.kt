@@ -13,53 +13,53 @@ import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme =
   darkColorScheme(
-    primary = EmeraldPrimary,
-    onPrimary = Color.Black,
-    primaryContainer = EmeraldContainer,
-    onPrimaryContainer = OnEmeraldContainer,
-    secondary = GoldAccent,
-    onSecondary = Color.Black,
-    secondaryContainer = GoldContainer,
-    onSecondaryContainer = OnGoldContainer,
-    tertiary = EmeraldAccent,
+    primary = BluePrimary,
+    onPrimary = White,
+    primaryContainer = BlueContainer,
+    onPrimaryContainer = OnBlueContainer,
+    secondary = BluePrimaryLight,
+    onSecondary = White,
+    secondaryContainer = BlueContainer,
+    onSecondaryContainer = OnBlueContainer,
+    tertiary = BlueLighter,
     background = DarkBackground,
-    onBackground = TextPrimary,
+    onBackground = TextPrimaryDark,
     surface = DarkSurface,
-    onSurface = TextPrimary,
+    onSurface = TextPrimaryDark,
     surfaceVariant = DarkSurfaceVariant,
-    onSurfaceVariant = TextSecondary,
+    onSurfaceVariant = TextSecondaryDark,
     outline = DarkSurfaceBorder,
-    error = CrimsonWarning,
-    errorContainer = CrimsonContainer,
+    error = WarningRed,
+    errorContainer = Color(0xFF7F1D1D),
     onError = Color.White
   )
 
 private val LightColorScheme =
   lightColorScheme(
-    primary = EmeraldPrimaryDark,
-    onPrimary = Color.White,
-    primaryContainer = Color(0xFFD1FAE5),
-    onPrimaryContainer = Color(0xFF064E3B),
-    secondary = Color(0xFFD97706),
-    onSecondary = Color.White,
-    secondaryContainer = Color(0xFFFEF3C7),
-    onSecondaryContainer = Color(0xFF78350F),
-    tertiary = EmeraldPrimary,
-    background = Color(0xFFF9FAFB),
-    onBackground = Color(0xFF111827),
-    surface = Color.White,
-    onSurface = Color(0xFF111827),
-    surfaceVariant = Color(0xFFF3F4F6),
-    onSurfaceVariant = Color(0xFF4B5563),
-    outline = Color(0xFFE5E7EB),
-    error = CrimsonWarning,
+    primary = BluePrimary,
+    onPrimary = White,
+    primaryContainer = Color(0xFFDBEAFE),
+    onPrimaryContainer = Color(0xFF0C1E3B),
+    secondary = BluePrimaryLight,
+    onSecondary = White,
+    secondaryContainer = Color(0xFFDBEAFE),
+    onSecondaryContainer = Color(0xFF082F4F),
+    tertiary = BlueLighter,
+    background = Color(0xFFFAFBFC),
+    onBackground = GrayDark,
+    surface = White,
+    onSurface = GrayDark,
+    surfaceVariant = GrayLight,
+    onSurfaceVariant = GrayText,
+    outline = GrayMedium,
+    error = WarningRed,
     errorContainer = Color(0xFFFEE2E2),
     onError = Color.White
   )
 
 @Composable
 fun MyApplicationTheme(
-  darkTheme: Boolean = true, // Default to sleek financial dark mode
+  darkTheme: Boolean = true, // Default to blue & white dark mode
   dynamicColor: Boolean = false,
   content: @Composable () -> Unit,
 ) {

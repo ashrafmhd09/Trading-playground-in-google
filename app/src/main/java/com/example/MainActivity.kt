@@ -88,20 +88,20 @@ fun EthicalStockApp(
                             modifier = Modifier
                                 .size(28.dp)
                                 .clip(CircleShape)
-                                .background(Color(0xFF0C2E21))
-                                .border(1.dp, Color(0xFFF59E0B), CircleShape),
+                                .background(Color(0xFF1E40AF))
+                                .border(1.dp, Color(0xFF3B82F6), CircleShape),
                             contentAlignment = Alignment.Center
                         ) {
                             Icon(
                                 imageVector = Icons.Filled.Security,
                                 contentDescription = null,
-                                tint = Color(0xFFF59E0B),
+                                tint = Color.White,
                                 modifier = Modifier.size(16.dp)
                             )
                         }
                         Column(horizontalAlignment = Alignment.CenterHorizontally) {
                             Text(
-                                text = "AAOIFI SHARIAH SCREENER",
+                                text = "SHARIA STOCK SCREENER",
                                 fontSize = 15.sp,
                                 fontWeight = FontWeight.ExtraBold,
                                 color = Color.White,
@@ -110,13 +110,13 @@ fun EthicalStockApp(
                             Text(
                                 text = "AAOIFI Standard 21 • Halal & Haram Classifications",
                                 fontSize = 10.sp,
-                                color = Color(0xFF34D399)
+                                color = Color(0xFF93C5FD)
                             )
                         }
                     }
                 },
                 colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
-                    containerColor = Color(0xFF040D0A)
+                    containerColor = Color(0xFF1E40AF)
                 ),
                 modifier = Modifier.testTag("screener_top_bar")
             )
